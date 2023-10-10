@@ -10,7 +10,7 @@ const tasksInitialState = [
 ];
 // Отвечает только за обновление свойства tasks
 // Теперь значением параметра state будет массив задач
-const tasksReducer = (state = tasksInitialState, action) => {
+export const tasksReducer = (state = tasksInitialState, action) => {
   switch (action.type) {
     case "tasks/addTask":
       return [...state, action.payload];
@@ -32,7 +32,7 @@ const filtersInitialState = {
 };
 // Отвечает только за обновление свойства filters
 // Теперь значением параметра state будет объект фильтров
-const filtersReducer = (state = filtersInitialState, action) => {
+export const filtersReducer = (state = filtersInitialState, action) => {
   switch (action.type) {
     case "filter/setStatusFilter":
       return {
@@ -44,7 +44,7 @@ const filtersReducer = (state = filtersInitialState, action) => {
   }
 };
 
-export const rootReducer = combineReducers({
-  tasks: tasksReducer,
-  filters: filtersReducer,
-});
+// export const rootReducer = combineReducers({
+//   tasks: tasksReducer,
+//   filters: filtersReducer,
+// });
