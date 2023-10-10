@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
 import css from "./Task.module.css";
-import { deleteTask, toggleCompleted } from "../../redux/filters/actions";
+import { deleteTask, toggleCompleted } from "../../redux/Slices/tasksSlicer";
 const Task = ({ task }) => {
   const dispatch = useDispatch();
   const handleDelete = () => {
