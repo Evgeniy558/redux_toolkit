@@ -1,8 +1,8 @@
 {
-  "name": "redux_app_organizer",
+  "name": "redux_toolkit",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://evgeniy558.github.io/redux_app_organizer",
+  "homepage": "https://evgeniy558.github.io/redux_toolkit",
   "dependencies": {
     "@redux-devtools/extension": "^3.2.5",
     "@reduxjs/toolkit": "^1.9.7",
